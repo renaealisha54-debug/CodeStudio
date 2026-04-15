@@ -1,0 +1,7 @@
+/codeup
+├── index.html          # Entry point
+├── src/
+│   ├── editor.js       # Core code processing
+│   ├── ui.js           # UI controls (modals/notepad)
+│   └── api.js          # Server communication
+└── style.css           # Global layout styles
