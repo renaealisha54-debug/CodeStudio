@@ -1,0 +1,12 @@
+<script type="module">
+    import { UI } from './src/ui.js';
+    import { Editor } from './src/editor.js';
+    import { API } from './src/api.js';
+
+    // Example usage:
+    document.getElementById('run-btn').addEventListener('click', async () => {
+        UI.updateStatus('Running...', 'var(--warning)');
+        const result = await API.executeTask('run');
+        UI.showModal('Result', result.output);
+    });
+</script>
