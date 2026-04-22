@@ -1,0 +1,61 @@
+/* style.css */
+:root {
+  /* Default: Dark Theme */
+  --bg-color: #0d1117;
+  --editor-bg: #161b22;
+  --sidebar-bg: #21262d;
+  --accent-color: #58a6ff;
+  --text-color: #c9d1d9;
+  --border-color: #30363d;
+  --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-code: 'Courier New', Courier, monospace;
+}
+
+/* Light Theme overrides */
+.theme-light {
+  --bg-color: #ffffff;
+  --editor-bg: #f6f8fa;
+  --sidebar-bg: #e1e4e8;
+  --accent-color: #0969da;
+  --text-color: #24292f;
+  --border-color: #d0d7de;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Component: Editor */
+.editor-container {
+  background-color: var(--editor-bg);
+  border: 1px solid var(--border-color);
+  font-family: var(--font-code);
+}
+
+/* Component: Sidebar */
+.sidebar {
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--border-color);
+}
+
+/* Component: Action Buttons */
+.btn-primary {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Component: Status Bar */
+.status-bar {
+  border-top: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+}
